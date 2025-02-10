@@ -1,0 +1,150 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](color_on_primary_fixed)\
+$os\
+$username\
+[](bg:color_primary_fixed_dim fg:color_on_primary_fixed)\
+$directory\
+[](fg:color_primary_fixed_dim bg:color_on_primary_fixed)\
+$git_branch\
+$git_status\
+[](fg:color_on_primary_fixed bg:color_on_primary_fixed)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:color_on_primary_fixed bg:color_on_primary_fixed)\
+$docker_context\
+$conda\
+[](fg:color_on_primary_fixed bg:color_primary_fixed_dim)\
+$time\
+[ ](fg:color_primary_fixed_dim)\
+$line_break$character\
+"""
+
+palette = 'matugen'
+
+[palettes.matugen]
+color_primary_fixed_dim = '{{colors.primary_fixed_dim.default.hex}}'
+color_on_primary_fixed = '{{colors.on_primary_fixed.default.hex}}'
+color_bg3 = '#665c54'
+color_blue = '{{colors.on_primary_fixed.default.hex}}'
+color_aqua = '#689d6a'
+color_green = '#98971a'
+color_yellow = '#d65d0e'
+color_purple = '#b16286'
+color_red = '#cc241d'
+
+
+[os]
+disabled = false
+style = "bg:color_on_primary_fixed fg:color_primary_fixed_dim"
+
+[os.symbols]
+Arch = "󰣇"
+
+[username]
+show_always = true
+style_user = "bg:color_on_primary_fixed fg:color_primary_fixed_dim"
+style_root = "bg:color_on_primary_fixed fg:color_primary_fixed_dim"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:color_on_primary_fixed bg:color_primary_fixed_dim"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:color_on_primary_fixed"
+format = '[[ $symbol $branch ](fg:color_primary_fixed_dim bg:color_on_primary_fixed)]($style)'
+
+[git_status]
+style = "bg:color_on_primary_fixed"
+format = '[[($all_status$ahead_behind )](fg:color_primary_fixed_dim bg:color_on_primary_fixed)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+
+[c]
+symbol = " "
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+
+[php]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+
+[java]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+
+[python]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
+
+[conda]
+style = "bg:color_bg3"
+format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_on_primary_fixed"
+format = '[[ $time ](fg:color_on_primary_fixed bg:color_primary_fixed_dim)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[](bold fg:color_green)'
+error_symbol = '[](bold fg:color_red)'
+vimcmd_symbol = '[](bold fg:color_green)'
+vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
+vimcmd_replace_symbol = '[](bold fg:color_purple)'
+vimcmd_visual_symbol = '[](bold fg:color_primary_fixed_dim)'
