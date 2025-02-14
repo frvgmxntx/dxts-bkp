@@ -1,0 +1,65 @@
+[config.wallpaper]
+command = "waypaper"
+arguments = ["--wallpaper $wallpaper"]
+set = true
+
+[templates.alacritty]
+input_path = './templates/colors-alacritty.toml'
+output_path = '~/.config/alacritty/colors.toml'
+
+[templates.cava]
+input_path = './templates/colors-cava'
+output_path = '~/.config/cava/config'
+
+[templates.fish]
+input_path = './templates/colors.fish'
+output_path = '~/.config/fish/colors.fish'
+
+[templates.fuzzel]
+input_path = './templates/colors-fuzzel.ini'
+output_path = '~/.config/fuzzel/fuzzel.ini'
+
+[templates.gtk3]
+input_path = './templates/colors-gtk.css'
+output_path = '.local/share/themes/FlatColor/gtk-3.0/colors.css'
+
+[templates.hyprland]
+input_path = './templates/colors-mat.conf'
+output_path = '~/.config/hypr/colors-mat.conf'
+post_hook = 'hyprctl reload'
+
+[templates.mako]
+input_path = './templates/colors-mako'
+output_path = '~/.config/mako/config'
+post_hook = 'makoctl reload'
+
+[templates.neovim]
+input_path = './templates/colors-nvim.vim'
+output_path = '~/.cache/wal/colors-wal.vim'
+
+[templates.pywalfox]
+input_path = './templates/colors-pywalfox.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'
+
+[templates.qt5ct]
+input_path = './templates/colors-qt.conf'
+output_path = '~/.config/qt5ct/colors/matugen.conf'
+
+[templates.qt6ct]
+input_path = './templates/colors-qt.conf'
+output_path = '~/.config/qt6ct/colors/matugen.conf'
+
+[templates.starship]
+input_path = './templates/colors-starship.toml'
+output_path = '~/.config/starship.toml'
+
+[templates.vesktop]
+input_path = './templates/colors-vesktop.theme.css'
+output_path = '~/.config/vesktop/themes/vesktop.theme.css'
+
+[templates.waybar]
+pre_hook = 'killall waybar'
+input_path = './templates/colors-mat.css'
+output_path = '~/.config/waybar/colors-mat.css'
+post_hook = 'hyprctl dispatch exec waybar'

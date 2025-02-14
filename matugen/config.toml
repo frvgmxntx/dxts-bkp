@@ -1,0 +1,79 @@
+[config]
+reload_apps = true
+
+[config.reload_apps_list]
+kitty = true
+gtk_theme = true
+
+[config.wallpaper]
+command = "waypaper"
+arguments = ["--wallpaper $wallpaper"]
+set = false
+
+[templates.fuzzel]
+input_path = './templates/colors-fuzzel.ini'
+output_path = '~/.config/fuzzel/fuzzel.ini'
+
+[templates.hyprland]
+input_path = './templates/hyprcolors.conf'
+output_path = '~/.config/hypr/hyprcolors.conf'
+post_hook = 'hyprctl reload'
+
+[templates.hyprlock]
+input_path = './templates/hyprlockcolors.conf'
+output_path = '~/.config/hypr/hyprlockcolors.conf'
+
+[templates.ignis]
+input_path = './templates/colors-scss.scss'
+output_path = '~/.config/ignis/styles/colors.scss'
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/colors-kitty.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = "killall -SIGUSR1 kitty &"
+
+[templates.kvantum]
+input_path = '~/.config/matugen/templates/colors-kvantum.kvconfig'
+output_path = '~/.config/kvantum/matugen/matugen.kvconfig'
+
+[templates.mako]
+input_path = './templates/colors-mako.ini'
+output_path = '~/.config/mako/config'
+post_hook = 'makoctl reload'
+
+[templates.nvim]
+input_path = './templates/colors-nvim.json'
+output_path = '~/.cache/wal/colors-wal.vim'
+
+[templates.qt5]
+input_path = './templates/colors-qt.conf'
+output_path = '~/.config/qt5ct/colors/matugen-colors.conf'
+
+[templates.qt6]
+input_path = './templates/colors-qt.conf'
+output_path = '~/.config/qt6ct/colors/matugen-colors.conf'
+
+[templates.quickshell]
+input_path = './templates/colors-qml.qml'
+output_path = '~/.config/quickshell/Colors.qml'
+
+[templates.slurp]
+input_path = './templates/colors-slurp.sh'
+output_path = '~/.config/kitty/slurp.sh'
+
+[templates.starship]
+input_path = './templates/colors-starship.toml'
+output_path = '~/.config/starship.toml'
+
+[templates.vesktop]
+input_path = './templates/colors-discord.css'
+output_path = '~/.config/vesktop/themes/matugen.theme.css'
+
+[templates.yazi]
+input_path = './templates/colors-yazi.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+[templates.zathura]
+input_path = './templates/colors-zathura'
+output_path = '~/.config/zathura/zathurarc'
+

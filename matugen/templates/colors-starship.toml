@@ -1,15 +1,16 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](color_on_primary_fixed)\
+[ ╭─](fg:color_primary)\
+[](fg:color_bg0)\
 $os\
 $username\
-[](bg:color_primary_fixed_dim fg:color_on_primary_fixed)\
+[](bg:color_primary fg:color_bg0)\
 $directory\
-[](fg:color_primary_fixed_dim bg:color_on_primary_fixed)\
+[](fg:color_primary bg:color_bg0)\
 $git_branch\
 $git_status\
-[](fg:color_on_primary_fixed bg:color_on_primary_fixed)\
+[](fg:color_bg0 bg:color_bg0)\
 $c\
 $rust\
 $golang\
@@ -19,22 +20,18 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:color_on_primary_fixed bg:color_on_primary_fixed)\
-$docker_context\
-$conda\
-[](fg:color_on_primary_fixed bg:color_primary_fixed_dim)\
-$time\
-[ ](fg:color_primary_fixed_dim)\
+[](fg:color_bg0)\
 $line_break$character\
+[╰─➤ ](fg:color_primary)
 """
 
 palette = 'matugen'
 
 [palettes.matugen]
-color_primary_fixed_dim = '{{colors.primary_fixed_dim.default.hex}}'
-color_on_primary_fixed = '{{colors.on_primary_fixed.default.hex}}'
+color_primary = '{{colors.primary.default.hex}}'
+color_bg0 = '{{colors.on_primary.default.hex}}'
 color_bg3 = '#665c54'
-color_blue = '{{colors.on_primary_fixed.default.hex}}'
+color_blue = '#001f27'
 color_aqua = '#689d6a'
 color_green = '#98971a'
 color_yellow = '#d65d0e'
@@ -44,19 +41,19 @@ color_red = '#cc241d'
 
 [os]
 disabled = false
-style = "bg:color_on_primary_fixed fg:color_primary_fixed_dim"
+style = "bg:color_bg0 fg:color_primary"
 
 [os.symbols]
 Arch = "󰣇"
 
 [username]
 show_always = true
-style_user = "bg:color_on_primary_fixed fg:color_primary_fixed_dim"
-style_root = "bg:color_on_primary_fixed fg:color_primary_fixed_dim"
+style_user = "bg:color_bg0 fg:color_primary"
+style_root = "bg:color_bg0 fg:color_primary"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:color_on_primary_fixed bg:color_primary_fixed_dim"
+style = "fg:color_bg0 bg:color_primary"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -66,61 +63,63 @@ truncation_symbol = "…/"
 "Downloads" = " "
 "Music" = "󰝚 "
 "Pictures" = " "
-"Developer" = "󰲋 "
+"Developer" = " "
+".config" = " "
+"hypr" = " "
 
 [git_branch]
 symbol = ""
-style = "bg:color_on_primary_fixed"
-format = '[[ $symbol $branch ](fg:color_primary_fixed_dim bg:color_on_primary_fixed)]($style)'
+style = "bg:color_background"
+format = '[[ $symbol $branch ](fg:color_primary bg:color_bg0)]($style)'
 
 [git_status]
-style = "bg:color_on_primary_fixed"
-format = '[[($all_status$ahead_behind )](fg:color_primary_fixed_dim bg:color_on_primary_fixed)]($style)'
+style = "bg:color_bg0"
+format = '[[($all_status$ahead_behind )](fg:color_primary bg:color_bg0)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+style = "bg:color_bg0"
+format = '[[ $symbol( $version) ](fg:color_primary bg:color_bg0)]($style)'
 
 [c]
 symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+style = "bg:color_bg0"
+format = '[[ $symbol( $version) ](fg:color_primary bg:color_bg0)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+style = "bg:color_bg0"
+format = '[[ $symbol( $version) ](fg:color_primary bg:color_bg0)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+style = "bg:color_bg0"
+format = '[[ $symbol( $version) ](fg:color_primary bg:color_bg0)]($style)'
 
 [php]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+style = "bg:color_bg0"
+format = '[[ $symbol( $version) ](fg:color_primary bg:color_bg0)]($style)'
 
 [java]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+style = "bg:color_bg0"
+format = '[[ $symbol( $version) ](fg:color_primary bg:color_bg0)]($style)'
 
 [kotlin]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+style = "bg:color_bg0"
+format = '[[ $symbol( $version) ](fg:color_primary bg:color_bg0)]($style)'
 
 [haskell]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+style = "bg:color_bg0"
+format = '[[ $symbol( $version) ](fg:color_primary bg:color_bg0)]($style)'
 
 [python]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_primary_fixed_dim bg:color_blue)]($style)'
+style = "bg:color_bg0"
+format = '[[ $symbol( $version) ](fg:color_primary bg:color_bg0)]($style)'
 
 [docker_context]
 symbol = ""
@@ -134,8 +133,8 @@ format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:color_on_primary_fixed"
-format = '[[ $time ](fg:color_on_primary_fixed bg:color_primary_fixed_dim)]($style)'
+style = "bg:color_background"
+format = '[[ $time ](fg:color_bg0 bg:color_primary)]($style)'
 
 [line_break]
 disabled = false
@@ -147,4 +146,4 @@ error_symbol = '[](bold fg:color_red)'
 vimcmd_symbol = '[](bold fg:color_green)'
 vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
 vimcmd_replace_symbol = '[](bold fg:color_purple)'
-vimcmd_visual_symbol = '[](bold fg:color_primary_fixed_dim)'
+vimcmd_visual_symbol = '[](bold fg:color_primary)'

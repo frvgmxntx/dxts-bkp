@@ -2,7 +2,9 @@
 from ignis.widgets import Widget # main widget library
 
 # import modules
+#from .modules.corners import Corners
 from .modules.workspaces import Workspaces # workspace module
+from .modules.corners import CornerL, CornerR # central corners
 
 # define Bar class
 class Bar(Widget.Window): # bar is just another window
@@ -25,17 +27,20 @@ class Bar(Widget.Window): # bar is just another window
                 # left
                 start_widget = Widget.Box(child = 
                 [
-                    #
+                    CornerR()
                 ]),
                 # middle
                 center_widget = Widget.Box(child = 
                 [
+                    CornerL(),
                     Workspaces(),
+                    CornerR(), 
                 ]),
                 # right
                 end_widget = Widget.Box(child = 
                 [
-                    #
+                    CornerL()
+                    
                 ]),
 
             )
