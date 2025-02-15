@@ -2,9 +2,10 @@
 from ignis.widgets import Widget # main widget library
 
 # import modules
-#from .modules.corners import Corners
-from .modules.workspaces import Workspaces # workspace module
+from .modules.timedate import Timedate # clock & calendar (wip)
 from .modules.corners import CornerL, CornerR # central corners
+from .modules.workspaces import Workspaces # workspace module
+
 
 # define Bar class
 class Bar(Widget.Window): # bar is just another window
@@ -27,7 +28,8 @@ class Bar(Widget.Window): # bar is just another window
                 # left
                 start_widget = Widget.Box(child = 
                 [
-                    CornerR()
+                    Timedate(),
+                    CornerR(),
                 ]),
                 # middle
                 center_widget = Widget.Box(child = 

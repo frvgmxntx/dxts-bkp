@@ -29,7 +29,7 @@ palette = 'matugen'
 
 [palettes.matugen]
 color_primary = '{{colors.primary.default.hex}}'
-color_bg0 = '{{colors.on_primary.default.hex}}'
+color_bg0 = '{{colors.surface_container.default.hex}}'
 color_bg3 = '#665c54'
 color_blue = '#001f27'
 color_aqua = '#689d6a'

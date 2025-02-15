@@ -1,4 +1,5 @@
 # import ignis libraries
+from ignis.widgets import Widget
 from ignis.utils import Utils # utilities functions
 from ignis.app import IgnisApp # main app instance and config
 

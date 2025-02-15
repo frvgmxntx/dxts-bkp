@@ -1,15 +1,16 @@
 @use '../../../styles/colors.scss';
 
 .corner-l {
-  background: transparent;
-  border-radius: 0rem 1.5rem 0rem 0rem;
-  padding: 0rem 2rem 0rem 2rem; 
-  box-shadow: 0 -1.2rem 0 0 rgba(colors.$background, .75);
+  background: none;
+  border-radius: 0rem 1.4rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 0rem; 
+  box-shadow: 0 -1rem 0 0 rgba(colors.$background, 1);
 }
 
 .corner-r {
-  background: transparent;
-  border-radius: 1.5rem 0rem 0rem 0rem;
-  padding: 0rem 2rem 0rem 2rem;
-  box-shadow: 0rem -1.2rem 0 0 rgba(colors.$background, .75);
+  background: none;
+  border-radius: 1.4rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 1rem; 
+  box-shadow: 0rem -1rem 0 0 rgba(colors.$background, 1);
+
 }

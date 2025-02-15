@@ -1,0 +1,23 @@
+@use '../../../styles/colors.scss';
+
+.timedate-clock-widget {
+  background: none;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 0rem 0rem 1.5rem 0rem;
+  color: colors.$primary;
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+.timedate-container {
+  background: rgba(colors.$background, 1);
+  padding: 0.5rem 1rem;
+  border-radius: 0rem 0rem 1.5rem 0rem;
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+.timedate-clock-container {
+  background: none;
+  padding: 0rem 0.2rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
