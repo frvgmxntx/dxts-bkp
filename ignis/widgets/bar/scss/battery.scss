@@ -1,0 +1,18 @@
+@use '../../../styles/colors.scss';
+
+.battery-item {
+  background: rgba(colors.$background, 1);
+  border-radius: 0rem 0rem 0rem 1.5rem;
+  padding: 0rem 1rem; 
+}
+
+.battery-icon {
+  color: colors.$primary;
+  -gtk-icon-size: 1.4rem;
+}
+
+.battery-percent {
+  color: colors.$primary;
+  font-size: 0.9rem;
+}
+

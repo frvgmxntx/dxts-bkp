@@ -2,6 +2,7 @@
 from ignis.widgets import Widget # main widget library
 
 # import modules
+from .modules.battery import Battery # battery module
 from .modules.timedate import Timedate # clock & calendar (wip)
 from .modules.corners import CornerL, CornerR # central corners
 from .modules.workspaces import Workspaces # workspace module
@@ -41,8 +42,8 @@ class Bar(Widget.Window): # bar is just another window
                 # right
                 end_widget = Widget.Box(child = 
                 [
-                    CornerL()
-                    
+                    CornerL(),
+                    Battery(),
                 ]),
 
             )
