@@ -2,8 +2,9 @@
 
 .battery-item {
   background: rgba(colors.$background, 1);
-  border-radius: 0rem 0rem 0rem 1.5rem;
-  padding: 0rem 1rem; 
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  padding: 0rem 2rem;
+  margin: 0.2rem 10px 0rem 0rem;
 }
 
 .battery-icon {

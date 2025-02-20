@@ -30,7 +30,6 @@ class Bar(Widget.Window): # bar is just another window
                 start_widget = Widget.Box(child = 
                 [
                     Timedate(),
-                    CornerR(),
                 ]),
                 # middle
                 center_widget = Widget.Box(child = 
@@ -41,8 +40,7 @@ class Bar(Widget.Window): # bar is just another window
                 ]),
                 # right
                 end_widget = Widget.Box(child = 
-                [
-                    CornerL(),
+                [ 
                     Battery(),
                 ]),
 
