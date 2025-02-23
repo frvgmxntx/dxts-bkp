@@ -69,6 +69,10 @@ output_path = '~/.config/starship.toml'
 input_path = './templates/colors-discord.css'
 output_path = '~/.config/vesktop/themes/matugen.theme.css'
 
+[templates.waybar]
+input_path = './templates/colors-css.css'
+output_path = '~/.config/waybar/css/colors.css'
+
 [templates.yazi]
 input_path = './templates/colors-yazi.toml'
 output_path = '~/.config/yazi/theme.toml'

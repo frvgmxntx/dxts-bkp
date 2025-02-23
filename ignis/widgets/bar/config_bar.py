@@ -17,7 +17,7 @@ class Bar(Widget.Window): # bar is just another window
         super().__init__( # inherit parent class attributes
             # bar properties
             anchor = ["left", "top", "right"], # anchor on top screen
-            exclusivity = "exclusive", # tell hyprland to fuck off
+            exclusivity = "ignore", # tell hyprland to fuck off
             monitor = monitor, # to start on each monitor
             namespace = f"ignis_BAR_{monitor}", # namespace
             layer = "top", # on top of other stuff
@@ -29,7 +29,7 @@ class Bar(Widget.Window): # bar is just another window
                 # left
                 start_widget = Widget.Box(child = 
                 [
-                    Timedate(),
+                    #Timedate(),
                 ]),
                 # middle
                 center_widget = Widget.Box(child = 
@@ -41,7 +41,7 @@ class Bar(Widget.Window): # bar is just another window
                 # right
                 end_widget = Widget.Box(child = 
                 [ 
-                    Battery(),
+                    #Battery(),
                 ]),
 
             )

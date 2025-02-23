@@ -13,15 +13,15 @@ class BatteryItem(Widget.Box):
                 Widget.Icon(
                     icon_name=device.bind("icon_name"), css_classes=["battery-icon"]
                 ),
-                #Widget.Revealer(
-                #child = Widget.Label(
-                #    label=device.bind("percent", lambda x: f"{int(x)}%"),
-                #    css_classes=["battery-percent"],
-                #    ),
-                #transition_type = "slide_right",
-                #transition_duration = 500,
-                #reveal_child = True,
-                #),
+                Widget.Revealer(
+                child = Widget.Label(
+                    label=device.bind("percent", lambda x: f"{int(x)}%"),
+                    css_classes=["battery-percent"],
+                    ),
+                transition_type = "slide_right",
+                transition_duration = 500,
+                reveal_child = True,
+                ),
             ],
         )
 
