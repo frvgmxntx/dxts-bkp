@@ -1,0 +1,11 @@
+@import "./colors.css";
+
+#clock {
+  color: alpha(@primary, 0.5);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#clock:hover {
+  color: alpha(@primary, 1);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}

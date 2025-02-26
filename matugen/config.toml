@@ -10,9 +10,28 @@ command = "waypaper"
 arguments = ["--wallpaper $wallpaper"]
 set = false
 
+[templates.firefox]
+input_path = './templates/pywalfox-colors.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'
+
 [templates.fuzzel]
 input_path = './templates/colors-fuzzel.ini'
 output_path = '~/.config/fuzzel/fuzzel.ini'
+
+[templates.gtk-3]
+input_path = './templates/gtk-3.0/gtk.css'
+output_path = '~/.local/share/themes/FlatColor/gtk-3.0/gtk.css'
+
+
+[templates.gtk-32]
+input_path = './templates/gtk-3.20/gtk.css'
+output_path = '~/.local/share/themes/FlatColor/gtk-3.20/gtk.css'
+post_hook = '~/.config/hypr/scripts/reload-gtk.sh'
+
+[templates.gtk-icons]
+input_path = './templates/gtk-icons.sh'
+output_path = '~/.config/hypr/scripts/archdroid-icon-theme/color.sh'
 
 [templates.hyprland]
 input_path = './templates/hyprcolors.conf'
@@ -52,10 +71,6 @@ output_path = '~/.config/qt5ct/colors/matugen-colors.conf'
 [templates.qt6]
 input_path = './templates/colors-qt.conf'
 output_path = '~/.config/qt6ct/colors/matugen-colors.conf'
-
-[templates.quickshell]
-input_path = './templates/colors-qml.qml'
-output_path = '~/.config/quickshell/Colors.qml'
 
 [templates.slurp]
 input_path = './templates/colors-slurp.sh'

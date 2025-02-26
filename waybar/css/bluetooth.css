@@ -1,0 +1,24 @@
+@import "./colors.css";
+
+#bluetooth {
+  margin: 0rem 0.4rem 0rem 0.3rem;
+  color: alpha(@primary, 0.5);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#bluetooth:hover {
+  color: alpha(@primary, 1);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#bluetooth.device {
+  padding: 0rem 0.1rem 0rem 0rem;
+  font-size: 0.75rem;
+  color: alpha(@on_surface, 0.5);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#bluetooth.device:hover {
+  color: alpha(@on_surface, 1);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}

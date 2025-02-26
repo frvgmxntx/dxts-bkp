@@ -1,0 +1,34 @@
+{
+  "wireplumber": {
+    "format": "{icon}",
+    "format-icons": ["","",""],
+    "format-muted": "",
+    "states": {
+      "top": 65,
+      "mid": 33,
+      "low": 0,
+    },
+    "tooltip": false,
+  },
+  
+  "wireplumber#volume": {
+    "format": "{volume}%",
+    "format-muted": "-%",
+    "tooltip": false,
+  },
+
+  "group/audio": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "audio-child",
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "wireplumber",
+      "wireplumber#volume",
+    ],
+  },
+
+
+}
