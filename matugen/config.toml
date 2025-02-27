@@ -23,15 +23,14 @@ output_path = '~/.config/fuzzel/fuzzel.ini'
 input_path = './templates/gtk-3.0/gtk.css'
 output_path = '~/.local/share/themes/FlatColor/gtk-3.0/gtk.css'
 
-
 [templates.gtk-32]
 input_path = './templates/gtk-3.20/gtk.css'
 output_path = '~/.local/share/themes/FlatColor/gtk-3.20/gtk.css'
-post_hook = '~/.config/hypr/scripts/reload-gtk.sh'
 
 [templates.gtk-icons]
 input_path = './templates/gtk-icons.sh'
 output_path = '~/.config/hypr/scripts/archdroid-icon-theme/color.sh'
+post_hook = '~/.config/hypr/scripts/archdroid-icon-theme/export.sh &'
 
 [templates.hyprland]
 input_path = './templates/hyprcolors.conf'
@@ -95,4 +94,12 @@ output_path = '~/.config/yazi/theme.toml'
 [templates.zathura]
 input_path = './templates/colors-zathura'
 output_path = '~/.config/zathura/zathurarc'
+
+[templates.zen-chrome]
+input_path = './templates/zen-browser/userChrome.css'
+output_path = '~/.zen/hj0jj3u6.Default (beta)/chrome/userChrome.css'
+
+[templates.zen-content]
+input_path = './templates/zen-browser/userContent.css'
+output_path = '~/.zen/hj0jj3u6.Default (beta)/chrome/userContent.css'
 

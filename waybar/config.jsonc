@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "margin": "5 100 0 100",
+  "margin": "5 10 0 10",
   "name": "bar-top",
   "exclusive": "true",
   "fixed-center": true,

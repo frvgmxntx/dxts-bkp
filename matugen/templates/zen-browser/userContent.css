@@ -155,4 +155,12 @@
       background-color: {{colors.surface_container_high.default.hex}} !important;
     }
   }
+
+  @-moz-document url-prefix("about:reader") {
+    body {
+        background-color: transparent !important;
+    }
+  }
 }
+
+
