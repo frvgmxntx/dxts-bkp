@@ -1,5 +1,5 @@
 /* Default color scheme */
-@define-color color0 {{colors.on_primary_fixed.default.hex}};
+@define-color color0 alpha({{colors.on_primary_fixed.default.hex}}, 0.2);
 @define-color color1 {{colors.surface_variant.default.hex}};
 @define-color color2 {{colors.on_primary.default.hex}};
 @define-color color3 {{colors.surface_container.default.hex}};

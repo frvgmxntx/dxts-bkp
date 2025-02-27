@@ -1,0 +1,49 @@
+@import "./colors.css";
+
+#custom-tools-icon {
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  color: alpha(@primary, 0.5);
+  font-size: 0.85rem;
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#custom-tools-icon:hover {
+  color: alpha(@primary, 1);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#custom-backup-dots {
+  font-size: 0.75rem;
+  padding: 0rem 0.5rem 0rem 0rem;
+  color: alpha(@on_surface, 0.5);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#custom-backup-dots:hover {
+  color: alpha(@on_surface, 1);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#custom-screenrecord {
+  font-size: 0.75rem;
+  padding: 0rem 0.8rem 0rem 0rem;
+  color: alpha(@on_surface, 0.5);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#custom-screenrecord:hover {
+  color: alpha(@on_surface, 1);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#custom-wallpaper {
+  font-size: 0.75rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  color: alpha(@on_surface, 0.5);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#custom-wallpaper:hover {
+  color: alpha(@on_surface, 1);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}

@@ -6,6 +6,7 @@
     "~/.config/waybar/modules/clock.json",
     "~/.config/waybar/modules/network.json",
     "~/.config/waybar/modules/power.json",
+    "~/.config/waybar/modules/tools.json",
     "~/.config/waybar/modules/tray.json",
     "~/.config/waybar/modules/window.json",
     "~/.config/waybar/modules/workspaces.json",
