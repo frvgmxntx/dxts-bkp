@@ -1,3 +1,17 @@
 {
-
+  "hyprland/window": {
+    "format": "{title}",
+    "rewrite": {
+      "(.*)Discord(.*)": "",
+      "kitty": "",
+      "(.*)Lutris(.*)": "󰊗",
+      "(.*)qBittorrent(.*)": "",
+      "(.*)Starbound(.*)": "",
+      "steam": "",
+      "(.*)Thunar(.*)": "󰉋",
+      "(.*)Wine(.*)": "",
+      "(.*)Zen Browser(.*)": "󰈹",
+    },
+    "tooltip": false,
+  },
 }

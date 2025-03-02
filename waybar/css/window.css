@@ -1,1 +1,14 @@
 @import "./colors.css";
+
+#window {
+  font-size: 1.1rem;
+  padding: 0rem 0.5rem;
+  margin: 0rem 1rem 0rem 0rem;
+  color: alpha(@primary_fixed, 0.5);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}
+
+#window:hover {
+  color: alpha(@primary_fixed, 1);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
+}

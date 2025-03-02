@@ -10,16 +10,19 @@
   "include": ["~/.config/waybar/modules/global.json"],
   "modules-left": [
     "hyprland/workspaces",
+    "hyprland/window",
   ],
   "modules-center": [
     "clock",
   ],
   "modules-right": [
     "group/tray",
+    "group/resources",
     "group/tools",
     "group/bluetooth",
     "group/network", 
     "group/audio",
     "group/battery",
+    "group/power",
   ],
 }

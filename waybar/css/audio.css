@@ -2,45 +2,45 @@
 
 #wireplumber.top {
   margin: 0rem 1.2rem 0rem 0rem;
-  color: alpha(@primary, 0.5);
+  color: alpha(@primary_fixed, 0.5);
   transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
 }
 
 #wireplumber.top:hover {
-  color: alpha(@primary, 1);
+  color: alpha(@primary_fixed, 1);
   transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
 }
 
 #wireplumber.mid {
   margin: 0rem 0.9rem 0rem 0rem;
-  color: alpha(@primary, 0.5);
+  color: alpha(@primary_fixed, 0.5);
   transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
 }
 
 #wireplumber.mid:hover {
-  color: alpha(@primary, 1);
+  color: alpha(@primary_fixed, 1);
   transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
 }
 
 #wireplumber.low {
   margin: 0rem 0.85rem 0rem 0rem;
-  color: alpha(@primary, 0.5);
+  color: alpha(@primary_fixed, 0.5);
   transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
 }
 
 #wireplumber.low:hover {
-  color: alpha(@primary, 1);
+  color: alpha(@primary_fixed, 1);
   transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
 }
 
 #wireplumber.muted {
   margin: 0rem 1.1rem 0rem 0rem;
-  color: alpha(@primary, 0.5);
+  color: alpha(@primary_fixed, 0.5);
   transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
 }
 
 #wireplumber.muted:hover {
-  color: alpha(@primary, 1);
+  color: alpha(@primary_fixed, 1);
   transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
 }
 

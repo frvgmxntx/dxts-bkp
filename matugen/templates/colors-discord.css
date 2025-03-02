@@ -26,10 +26,10 @@
 	--panel-roundness: 0px; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
 
 	/* background colors */
-	--bg-0: oklch(from {{colors.background.default.hex}} l c h / 0.5); /* main background color. */
-	--bg-1: oklch(from {{colors.background.default.hex}} calc(l + 0.04) c h / 0.4); /* background color for secondary elements like code blocks, embeds, etc. */
-	--bg-2: oklch(from {{colors.background.default.hex}} calc(l + 0.08) c h); /* color of neutral buttons. */
-	--bg-3: oklch(from {{colors.background.default.hex}} calc(l + 0.12) c h); /* color of neutral buttons when hovered. */
+	--bg-0: oklch(from {{colors.on_primary.default.hex}} l c h / 0.25); /* main background color. */
+	--bg-1: oklch(from {{colors.on_primary.default.hex}} calc(l + 0.04) c h / 0.4); /* background color for secondary elements like code blocks, embeds, etc. */
+	--bg-2: oklch(from {{colors.on_primary.default.hex}} calc(l + 0.08) c h); /* color of neutral buttons. */
+	--bg-3: oklch(from {{colors.on_primary.default.hex}} calc(l + 0.12) c h); /* color of neutral buttons when hovered. */
 
 	/* state modifiers */
 	--hover: oklch(54% 0 0 / 0.1); /* color of hovered elements. */
@@ -70,15 +70,15 @@
 	--reply-hover-overlay: var(--hover); /* overlay color of message you are replying to when hovered. */
 
 	/* color shades */
-	--pink: oklch(from {{colors.background.default.hex}} l c h);
+	--pink: oklch(from {{colors.on_primary.default.hex}} l c h);
 	--pink-1: oklch(from var(--pink) calc(l - 0.1) c h);
 	--pink-2: oklch(from var(--pink) calc(l - 0.2) c h);
-	--purple: oklch(from {{colors.primary.default.hex}} l c h);
+	--purple: oklch(from {{colors.primary_fixed.default.hex}} l c h);
 	--purple-1: oklch(from var(--purple) calc(l - 0.1) c h);
 	--purple-2: oklch(from var(--purple) calc(l - 0.2) c h);
 	--cyan: oklch(from {{colors.secondary.default.hex}} l c h);
 	--yellow: oklch(from {{colors.tertiary.default.hex}} l c h);
-	--green: oklch(from {{colors.primary.default.hex}} l c h);
+	--green: oklch(from {{colors.primary_fixed.default.hex}} l c h);
 	--green-1: oklch(from var(--green) calc(l - 0.1) c h);
 	--green-2: oklch(from var(--green) calc(l - 0.2) c h);
 }
