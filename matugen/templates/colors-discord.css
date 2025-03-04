@@ -23,7 +23,7 @@
 	--corner-text: 'system24'; /* custom text to display in the corner. only works on windows. */
 	--pad: 16px; /* padding between panels. */
 	--txt-pad: 10px; /* padding inside panels to prevent labels from clipping */
-	--panel-roundness: 0px; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
+	--panel-roundness: 12px; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
 
 	/* background colors */
 	--bg-0: oklch(from {{colors.on_primary.default.hex}} l c h / 0.25); /* main background color. */

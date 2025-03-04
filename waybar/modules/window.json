@@ -8,6 +8,7 @@
       "(.*)qBittorrent(.*)": "",
       "(.*)Starbound(.*)": "",
       "steam": "",
+      "(.*)Stremio(.*)": "󰿎",
       "(.*)Thunar(.*)": "󰉋",
       "(.*)Wine(.*)": "",
       "(.*)Zen Browser(.*)": "󰈹",
