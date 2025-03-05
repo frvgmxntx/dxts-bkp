@@ -5,6 +5,7 @@
       "(.*)Discord(.*)": "",
       "kitty": "",
       "(.*)Lutris(.*)": "󰊗",
+      "(.*).py": "",
       "(.*)qBittorrent(.*)": "",
       "(.*)Starbound(.*)": "",
       "steam": "",

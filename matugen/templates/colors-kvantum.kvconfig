@@ -78,7 +78,7 @@ tooltip_blur_radius=0
 [GeneralColors]
 window.color=#121c15
 base.color=#121c15
-alt.base.color={{colors.primary.default.hex}}
+alt.base.color={{colors.on_primary.default.hex}}
 button.color=#C5B77E
 light.color=#5a6d60
 mid.light.color=#586b5e
