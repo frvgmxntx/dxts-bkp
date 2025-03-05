@@ -23,7 +23,7 @@
     --toolbar-bgcolor: {{colors.surface_container_high.default.hex}} !important;
     --newtab-background-color: {{colors.surface_container.default.hex}} !important;
     --zen-themed-toolbar-bg: {{colors.surface_container_low.default.hex}} !important;
-    --zen-main-browser-background: {{colors.surface_container_low.default.hex}}00 !important;
+    --zen-main-browser-background: {{colors.on_primary.default.hex}} !important;
   }
 
   #permissions-granted-icon{

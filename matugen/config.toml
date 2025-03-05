@@ -10,6 +10,11 @@ command = "waypaper"
 arguments = ["--wallpaper $wallpaper"]
 set = false
 
+[templates.avatar]
+input_path = './templates/avatar.svg'
+output_path = '~/.config/hypr/avatar.svg'
+post_hook = 'magick -background none ~/.config/hypr/avatar.svg ~/.config/hypr/avatar.png'
+
 [templates.firefox]
 input_path = './templates/pywalfox-colors.json'
 output_path = '~/.cache/wal/colors.json'
