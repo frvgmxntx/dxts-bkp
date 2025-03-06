@@ -1,6 +1,6 @@
 # frvg's .s!
 
-## Hyprland, Ignis, Matugen & friends
+## Hyprland, Matugen & friends
 
 *loading, stay alert...*
 
