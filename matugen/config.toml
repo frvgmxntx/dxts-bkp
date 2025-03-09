@@ -26,11 +26,7 @@ output_path = '~/.config/fuzzel/fuzzel.ini'
 
 [templates.flatcolor-gtk-3]
 input_path = './templates/gtk-3.0/gtk.css'
-  output_path = '~/.local/share/themes/FlatColor/gtk-3.0/gtk.css'
-
-[templates.axmat-gtk-3]
-input_path = './templates/colors.css'
-output_path = '~/.local/share/themes/AxMat/gtk-3.0/colors.css'
+output_path = '~/.local/share/themes/FlatColor/gtk-3.0/gtk.css'
 
 [templates.flatcolor-gtk-32]
 input_path = './templates/gtk-3.20/gtk.css'
@@ -39,10 +35,6 @@ output_path = '~/.local/share/themes/FlatColor/gtk-3.20/gtk.css'
 [templates.flatcolor-gtk-4]
 input_path = './templates/gtk-4/gtk.css'
 output_path = '~/.local/share/themes/FlatColor/gtk-4.0/colors.css'
-
-[templates.axmat-gtk-4]
-input_path = './templates/colors.css'
-output_path = '~/.local/share/themes/AxMat/gtk-4.0/colors.css'
 
 [templates.gtk-icons]
 input_path = './templates/gtk-icons.sh'
