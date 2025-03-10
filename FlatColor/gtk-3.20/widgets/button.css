@@ -8,7 +8,7 @@ button {
     border-style: solid;
     border-color: transparent;
     border-radius: 0px;
-    background-color: transparent;
+    background-color: @button_normal_color;
     background-image: none;
     color: @text_color;
 }
@@ -19,19 +19,19 @@ button:focus {
 }
 
 button:hover {
-    background-color: transparent;
-    color: mix(@fg_color, @color0, 0.35);
+    background-color: shade(@selected_bg_color, 0.9);
+    color: @fg_color;
 }
 
 button:active,
 button:active:hover,
 button.toggle:checked {
     color: @fg_color;
-    background-color: shade(@selected_bg_color, 0.6);
+    background-color: shade(@selected_bg_color, 0.83);
 }
 
 button:disabled {
-    background-color: transparent;
+    background-color: mix(@color8, @color0, 0.40);
     background-image: none;
     color: mix(@text_color, @color0, 0.40);
 }

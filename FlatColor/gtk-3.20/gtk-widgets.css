@@ -29,7 +29,7 @@
  ***************/
 
 .background {
-    background-color: alpha(@theme_bg_color, 1);
+    background-color: @theme_bg_color;
     color: @theme_fg_color;
 }
 .background.client-decorated {

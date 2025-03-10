@@ -10,20 +10,20 @@
     border-style: solid;
     border-color: transparent;
     border-radius: 0px;
-    background-color: @theme_bg_color;
+    background-color: shade( @theme_bg_color, 1.58 );
     background-image: none;
     color: @theme_text_color;
 }
 
 .button:hover {
-	background-color: shade( @theme_bg_color, 1.05 );
+	background-color: shade( @theme_bg_color, 1.35 );
     color: @theme_fg_color;
 }
 
 .button:active,
 .button:active:hover {
     color: @theme_fg_color;
-    background-color: shade(@theme_selected_bg_color, 0.5);
+    background-color: shade(@theme_selected_bg_color, 0.93);
 }
 .button:active:hover {
     color: shade(@theme_fg_color, 0.6);

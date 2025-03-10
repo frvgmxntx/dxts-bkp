@@ -12,7 +12,7 @@
 @import "./css/colors.css";
 
 * {
-  all:unset;
+  all:unset; 
 }
 
 window.bar-top#waybar {

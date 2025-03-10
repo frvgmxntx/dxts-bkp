@@ -13,12 +13,10 @@ set = false
 [templates.avatar]
 input_path = './templates/avatar.svg'
 output_path = '~/.config/hypr/avatar.svg'
-post_hook = 'magick -background none ~/.config/hypr/avatar.svg ~/.config/hypr/avatar.png'
 
 [templates.firefox]
 input_path = './templates/pywalfox-colors.json'
 output_path = '~/.cache/wal/colors.json'
-post_hook = 'pywalfox update'
 
 [templates.fuzzel]
 input_path = './templates/colors-fuzzel.ini'
@@ -39,25 +37,18 @@ output_path = '~/.local/share/themes/FlatColor/gtk-4.0/colors.css'
 [templates.flatcolor-gtk-icons]
 input_path = './templates/gtk-icons.sh'
 output_path = '~/.config/hypr/scripts/archdroid-icon-theme/color.sh'
-post_hook = '~/.config/hypr/scripts/archdroid-icon-theme/export.sh'
 
 [templates.hyprland]
 input_path = './templates/hyprcolors.conf'
 output_path = '~/.config/hypr/hyprcolors.conf'
-post_hook = 'hyprctl reload'
 
 [templates.hyprlock]
 input_path = './templates/hyprlockcolors.conf'
 output_path = '~/.config/hypr/hyprlockcolors.conf'
 
-[templates.ignis]
-input_path = './templates/colors-scss.scss'
-output_path = '~/.config/ignis/styles/colors.scss'
-
 [templates.kitty]
 input_path = '~/.config/matugen/templates/colors-kitty.conf'
 output_path = '~/.config/kitty/colors.conf'
-post_hook = "killall -SIGUSR1 kitty &"
 
 [templates.kvantum]
 input_path = '~/.config/matugen/templates/colors-kvantum.kvconfig'
@@ -66,20 +57,14 @@ output_path = '~/.config/kvantum/matugen/matugen.kvconfig'
 [templates.mako]
 input_path = './templates/colors-mako.ini'
 output_path = '~/.config/mako/config'
-post_hook = 'makoctl reload'
 
 [templates.material-gtk-3-assets]
 input_path = './templates/gtk-material-color/svg/gtk-3-assets.svg'
-output_path = '~/Projects/Git/materia-theme/src/gtk-3.0/assets.svg'
+output_path = '~/.config/hypr/scripts/materia-theme/src/gtk-3.0/assets.svg'
 
 [templates.material-gtk-theme-color]
 input_path = './templates/gtk-material-color/_theme-color.scss'
-output_path = '~/Projects/Git/materia-theme/src/_theme-color.scss'
-post_hook = '~/Projects/Git/materia-theme/build_install.sh'
-
-[templates.nvim]
-input_path = './templates/colors-nvim.json'
-output_path = '~/.cache/wal/colors-wal.vim'
+output_path = '~/.config/hypr/scripts/materia-theme/src/_theme-color.scss'
 
 [templates.qt5]
 input_path = './templates/colors-qt.conf'
@@ -104,14 +89,6 @@ output_path = '~/.config/vesktop/themes/matugen.theme.css'
 [templates.waybar]
 input_path = './templates/colors-css.css'
 output_path = '~/.config/waybar/css/colors.css'
-
-[templates.yazi]
-input_path = './templates/colors-yazi.toml'
-output_path = '~/.config/yazi/theme.toml'
-
-[templates.zathura]
-input_path = './templates/colors-zathura'
-output_path = '~/.config/zathura/zathurarc'
 
 [templates.zen-chrome]
 input_path = './templates/zen-browser/userChrome.css'
