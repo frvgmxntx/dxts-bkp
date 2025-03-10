@@ -20,7 +20,7 @@
 #tray menu {
   padding: 0.7rem 0.7rem;
   font-size: 0.85rem;
-  background: alpha(@on_primary, 0.5);
+  background: alpha(@on_primary, 0.9);
   border-radius: 1.5rem;
   color: alpha(@primary_fixed, 1);
 }

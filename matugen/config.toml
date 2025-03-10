@@ -36,10 +36,10 @@ output_path = '~/.local/share/themes/FlatColor/gtk-3.20/gtk.css'
 input_path = './templates/gtk-4/gtk.css'
 output_path = '~/.local/share/themes/FlatColor/gtk-4.0/colors.css'
 
-[templates.gtk-icons]
+[templates.flatcolor-gtk-icons]
 input_path = './templates/gtk-icons.sh'
 output_path = '~/.config/hypr/scripts/archdroid-icon-theme/color.sh'
-post_hook = '~/.config/hypr/scripts/archdroid-icon-theme/export.sh &'
+post_hook = '~/.config/hypr/scripts/archdroid-icon-theme/export.sh'
 
 [templates.hyprland]
 input_path = './templates/hyprcolors.conf'
@@ -67,6 +67,15 @@ output_path = '~/.config/kvantum/matugen/matugen.kvconfig'
 input_path = './templates/colors-mako.ini'
 output_path = '~/.config/mako/config'
 post_hook = 'makoctl reload'
+
+[templates.material-gtk-3-assets]
+input_path = './templates/gtk-material-color/svg/gtk-3-assets.svg'
+output_path = '~/Projects/Git/materia-theme/src/gtk-3.0/assets.svg'
+
+[templates.material-gtk-theme-color]
+input_path = './templates/gtk-material-color/_theme-color.scss'
+output_path = '~/Projects/Git/materia-theme/src/_theme-color.scss'
+post_hook = '~/Projects/Git/materia-theme/build_install.sh'
 
 [templates.nvim]
 input_path = './templates/colors-nvim.json'
