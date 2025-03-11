@@ -14,6 +14,10 @@ set = false
 input_path = './templates/avatar.svg'
 output_path = '~/.config/hypr/avatar.svg'
 
+[templates.cava]
+input_path = './templates/colors-cava'
+output_path = '~/.config/cava/config'
+
 [templates.firefox]
 input_path = './templates/pywalfox-colors.json'
 output_path = '~/.cache/wal/colors.json'
@@ -53,6 +57,10 @@ output_path = '~/.config/hypr/scripts/materia-theme/src/gtk-3.0/assets.svg'
 [templates.material-gtk-theme-color]
 input_path = './templates/gtk-material-color/_theme-color.scss'
 output_path = '~/.config/hypr/scripts/materia-theme/src/_theme-color.scss'
+
+[templates.neovim]
+input_path = '~/.config/matugen/templates/colors-nvim.vim'
+output_path = '~/.cache/wal/colors-wal.vim'
 
 [templates.qt5]
 input_path = './templates/colors-qt.conf'
