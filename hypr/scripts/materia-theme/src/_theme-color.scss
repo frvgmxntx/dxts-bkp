@@ -64,8 +64,8 @@ $surface-z8: #fff;
 $surface-switch-thumb: #fff;
 $on-surface: on($surface-z0);
 
-$primary-on-light: #4d4a69;;
-$primary-on-dark: #c7c2e7;
+$primary-on-light: #190d27;;
+$primary-on-dark: #d1c0e3;
 $primary: $primary-on-light;
 $on-primary: on($primary);
 
@@ -115,7 +115,7 @@ $on-titlebar: on($titlebar);
 $titlebar-indicator: currentcolor;
 
 @if theme.$dark-theme {
-  $surface-z0: rgba(#2f2d4a, 0.5);
+  $surface-z0: rgba(#372b46, 0.5);
   $surface-z1: color.mix(white, $surface-z0, 5%);
   $surface-z8: color.mix(white, $surface-z0, 12%);
   $surface-switch-thumb: color.mix(white, $surface-z0, 60%);

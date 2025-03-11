@@ -26,8 +26,8 @@
 	--panel-roundness: 12px; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
 
 	/* background colors */
-	--bg-0: oklch(from {{colors.on_primary.default.hex}} l c h / 0.25); /* main background color. */
-	--bg-1: oklch(from {{colors.on_primary.default.hex}} calc(l + 0.04) c h / 0.4); /* background color for secondary elements like code blocks, embeds, etc. */
+	--bg-0: oklch(from {{colors.on_primary.default.hex}} l c h / 0.15); /* main background color. */
+	--bg-1: oklch(from {{colors.on_primary.default.hex}} calc(l + 0.00) c h / 0.4); /* background color for secondary elements like code blocks, embeds, etc. */
 	--bg-2: oklch(from {{colors.on_primary.default.hex}} calc(l + 0.08) c h); /* color of neutral buttons. */
 	--bg-3: oklch(from {{colors.on_primary.default.hex}} calc(l + 0.12) c h); /* color of neutral buttons when hovered. */
 

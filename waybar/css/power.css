@@ -1,7 +1,7 @@
 @import "./colors.css";
 
 #custom-power-icon {
-  margin: 0rem 0.5rem 0rem 0rem;
+  margin: 0rem 0.9rem 0rem 0rem;
   color: alpha(@primary_fixed, 0.5);
   font-size: 0.85rem;
   transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);

@@ -3,7 +3,7 @@
 @media (prefers-color-scheme: dark) {
 
   :root {
-    --zen-colors-primary: {{colors.surface_container_high.default.hex}} !important;
+    --zen-colors-primary: {{colors.on_primary.default.hex}} !important;
     --zen-primary-color: {{colors.primary.default.hex}} !important;
     --zen-colors-secondary: {{colors.surface_container_high.default.hex}} !important;
     --zen-colors-tertiary: {{colors.surface_container_low.default.hex}} !important;
@@ -19,35 +19,35 @@
     --arrowpanel-background: {{colors.surface_container.default.hex}} !important;
     --sidebar-text-color: {{colors.on_surface.default.hex}} !important;
     --lwt-sidebar-text-color: {{colors.on_surface.default.hex}} !important;
-    --lwt-sidebar-background-color: {{colors.surface_container_lowest.default.hex}} !important;
-    --toolbar-bgcolor: {{colors.surface_container_high.default.hex}} !important;
+    --lwt-sidebar-background-color: {{colors.on_primary.default.hex}} !important;
+    --toolbar-bgcolor: {{colors.on_primary.default.hex}} !important;
     --newtab-background-color: {{colors.surface_container.default.hex}} !important;
-    --zen-themed-toolbar-bg: {{colors.surface_container_low.default.hex}} !important;
+    --zen-themed-toolbar-bg: {{colors.on_primary.default.hex}} !important;
     --zen-main-browser-background: {{colors.on_primary.default.hex}} !important;
   }
 
   #permissions-granted-icon{
-    color: {{colors.surface_container_low.default.hex}} !important;
+    color: {{colors.on_primary.default.hex}} !important;
   }
 
   .sidebar-placesTree {
-    background-color: {{colors.surface_container.default.hex}} !important;
+    background-color: {{colors.on_primary.default.hex}} !important;
   }
 
   #zen-workspaces-button {
-    background-color: {{colors.surface_container.default.hex}} !important;
+    background-color: {{colors.on_primary.default.hex}} !important;
   }
 
   #TabsToolbar {
-    background-color: {{colors.surface_container_low.default.hex}} !important;
+    background-color: {{colors.on_primary.default.hex}} !important;
   }
 
   #urlbar-background {
-    background-color: {{colors.surface_container.default.hex}} !important;
+    background-color: {{colors.background.default.hex}} !important;
   }
 
   .content-shortcuts {
-    background-color: {{colors.surface_container.default.hex}} !important;
+    background-color: {{colors.on_primary.default.hex}} !important;
     border-color: {{colors.primary.default.hex}} !important;
   }
 
@@ -62,7 +62,7 @@
   toolbar .toolbarbutton-1 {
     &:not([disabled]) {
       &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack){
-        fill: {{colors.surface_container_lowest.default.hex}};
+        fill: {{colors.on_primary.default.hex}};
       }
     }
   }
