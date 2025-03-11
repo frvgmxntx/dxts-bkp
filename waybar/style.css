@@ -16,11 +16,11 @@
 }
 
 window.bar-top#waybar {
-  background: alpha(@on_primary, 0.35);
+  background: alpha(@on_primary, 0.05);
   border-radius: 1.5rem;
   font-family: DejavuSansM Nerd Font;
   font-weight: bold;  
-  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.0);
+  transition: all 0.3s cubic-bezier(0.77,0.00,0.175,1.00);
 }
 
 
