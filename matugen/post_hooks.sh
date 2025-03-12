@@ -5,9 +5,9 @@ waypaper
 # MATUGEN POST HOOKS SINGLE SCRIPT
 echo -e '---MATUGEN POST HOOK STARTING---'
 
-# [templates.firefox]
-pywalfox update &
-echo -e '[templates.firefox]'
+# [templates.avatar]
+magick -background none /home/frvg/.config/hypr/avatar.svg /home/frvg/.config/hypr/avatar.png &
+echo -e '[templates.avatar]'
 
 # [templates.hyprland]
 hyprctl reload &
