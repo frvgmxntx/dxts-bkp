@@ -58,14 +58,14 @@ $on-dark: #fff;
 // Main colors
 //
 
-$surface-z0: #2b3323;
-$surface-z1: #c1cab4;
-$surface-z8: #c1cab4;
-$surface-switch-thumb: #131312;
+$surface-z0: #2e2f40;
+$surface-z1: #c5c4db;
+$surface-z8: #c5c4db;
+$surface-switch-thumb: #131314;
 $on-surface: on($surface-z0);
 
-$primary-on-light: #c1cab4;;
-$primary-on-dark: #c1cab4;
+$primary-on-light: #c5c4db;;
+$primary-on-dark: #c5c4db;
 $primary: $primary-on-light;
 $on-primary: on($primary);
 
@@ -89,7 +89,7 @@ $visited-on-dark: #c58af9;
 $visited: $visited-on-light;
 $on-visited: on($visited);
 
-$system: #131312;
+$system: #131314;
 $on-system: on($system);
 
 $tooltip: rgba(#616161, .9);
@@ -115,7 +115,7 @@ $on-titlebar: on($titlebar);
 $titlebar-indicator: currentcolor;
 
 @if theme.$dark-theme {
-  $surface-z0: rgba(#2b3323, 0.5);
+  $surface-z0: rgba(#2e2f40, 0.5);
   $surface-z1: color.mix(white, $surface-z0, 5%);
   $surface-z8: color.mix(white, $surface-z0, 12%);
   $surface-switch-thumb: color.mix(white, $surface-z0, 60%);

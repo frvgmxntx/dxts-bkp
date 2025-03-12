@@ -16,7 +16,7 @@
 }
 
 window.bar-top#waybar {
-  background: alpha(@on_primary, 0.05);
+  background: alpha(@on_primary, 0.35);
   border-radius: 1.5rem;
   font-family: DejavuSansM Nerd Font;
   font-weight: bold;  

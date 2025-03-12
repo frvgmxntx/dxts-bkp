@@ -3,8 +3,9 @@
     "format": "{title}",
     "rewrite": {
       "(.*)Discord(.*)": "",
-      "kitty": "",
+      "(.*)~(.*)": "",
       "(.*)Lutris(.*)": "󰊗",
+      "(.*)Pipewire(.*)": "󰗅",
       "(.*).py": "",
       "(.*)qBittorrent(.*)": "",
       "(.*)mpv": "󰿎",
