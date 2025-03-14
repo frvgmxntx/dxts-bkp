@@ -1,7 +1,14 @@
 # frvg's .s!
-this is my *personal* dotfiles backup, designed to my specific needs and workflow. Feel free to explore, fork or adapt them for your own setup.
+This is my *personal* dotfiles backup, designed for my specific needs and workflow. Feel free to explore, fork or adapt them for your own setup.
 
-## Hyprland, Matugen & friends
+╭──────System Specs──────╮
 
-*loading, stay alert...*
+ - **Laptop**  - Acer Nitro 5
+ - **CPU** - AMD Ryzen 7 4800H
+ - **GPU** - Nvidia GTX 1650 Max-Q
+ - **OS** - Arch Linux (btw)
+ - **Kernel** - Linux Zen-Kernel
+ - **WM** - Hyprland
+ 
 
+╰────────────────────╯
