@@ -14,4 +14,4 @@ This is my *personal* dotfiles backup, designed for my specific needs and workfl
 ╰────────────────────╯
 
 ## Setup
-*loading, stay alert...*
+*loading...*
