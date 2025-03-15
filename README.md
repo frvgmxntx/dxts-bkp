@@ -11,7 +11,7 @@ This is my *personal* dotfiles backup, designed for my specific needs and workfl
  - **WM** - Hyprland
  
 
-╰────────────────────╯
+╰──────────────────╯
 
 ## Setup
 *loading...*
