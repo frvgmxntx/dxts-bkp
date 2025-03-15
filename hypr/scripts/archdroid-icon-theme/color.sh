@@ -1,1 +1,1 @@
-COLOR=d5e8c8
+COLOR=e4dfff

@@ -54,6 +54,10 @@ output_path = '~/.config/hypr/scripts/materia-theme/src/gtk-3.0/assets.svg'
 input_path = './templates/gtk-material-color/_theme-color.scss'
 output_path = '~/.config/hypr/scripts/materia-theme/src/_theme-color.scss'
 
+[templates.mpv]
+input_path = './templates/colors-mpv.conf'
+output_path = '~/.config/mpv/script-opts/uosc.conf'
+
 [templates.neovim]
 input_path = '~/.config/matugen/templates/colors-nvim.vim'
 output_path = '~/.cache/wal/colors-wal.vim'

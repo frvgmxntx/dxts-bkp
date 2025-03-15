@@ -2,8 +2,10 @@
   "hyprland/window": {
     "format": "{title}",
     "rewrite": {
-      "(.*)Discord(.*)": "",
       "(.*)~(.*)": "",
+      "(.*)Discord(.*)": "",
+      "(.*)fish(.*)": "",
+      "(.*)kitty(.*)": "",
       "(.*)Lutris(.*)": "󰊗",
       "(.*)Pipewire(.*)": "󰗅",
       "(.*).py": "",
