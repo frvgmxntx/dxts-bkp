@@ -15,3 +15,6 @@ This is my *personal* dotfiles backup, designed for my specific needs and workfl
 
 ## Setup
 *loading...*
+
+## Work in Progress
+This repository is contantly evolving as I tweak and improve my setup. If you have suggestions or find something interesting, feel free to open an issue or submit a pull request.
