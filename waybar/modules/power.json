@@ -18,7 +18,7 @@
 
   "custom/suspend": {
     "format": "󰠠",
-    "on-click": "systemctl suspend",
+    "on-click": "systemctl hibernate",
     "tooltip": false,
   },
 

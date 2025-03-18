@@ -40,7 +40,15 @@ output_path = '~/.config/kitty/colors.conf'
 
 [templates.kvantum]
 input_path = '~/.config/matugen/templates/colors-kvantum.kvconfig'
-output_path = '~/.config/kvantum/matugen/matugen.kvconfig'
+output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
+
+[templates.kvantum-materia-kvconfig]
+input_path = '~/.config/matugen/templates/kvantum/colors-materia.kvconfig'
+output_path = '~/.config/Kvantum/MateriaDark/MateriaDark.kvconfig'
+
+[templates.kvantum-materia-svg]
+input_path = '~/.config/matugen/templates/kvantum/colors-materia.svg'
+output_path = '~/.config/Kvantum/MateriaDark/MateriaDark.svg'
 
 [templates.mako]
 input_path = './templates/colors-mako.ini'
@@ -73,10 +81,6 @@ output_path = '~/.config/qt6ct/colors/matugen-colors.conf'
 [templates.satty]
 input_path = './templates/colors-satty.toml'
 output_path = '~/.config/satty/config.toml'
-
-[templates.slurp]
-input_path = './templates/colors-slurp.sh'
-output_path = '~/.config/kitty/slurp.sh'
 
 [templates.starship]
 input_path = './templates/colors-starship.toml'
